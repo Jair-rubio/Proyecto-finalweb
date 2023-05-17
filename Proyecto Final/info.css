@@ -1,0 +1,85 @@
+#contenedor{
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                         'info imagen'
+                         'info2 imagen2'
+                         "info3 imagen3"
+                         'info4 imagen4';
+    grid-template-columns: 65% 35%;                   
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    margin-top: 5%;
+}
+
+h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+#titulo{
+    grid-area: titulo;
+}
+#texto{
+    padding: 5%;
+}
+
+#texto1{
+    grid-area: info;
+}
+
+#texto2{
+    grid-area: info2;
+}
+
+#texto3{
+    grid-area: info3;
+}
+
+#texto4{
+    grid-area: info4;
+}
+
+#imagen1{
+   grid-area: imagen;
+   padding: 3%;
+}
+
+#imagen2{
+    grid-area: imagen2;
+    padding: 3%;
+}
+
+
+#imagen3{
+    grid-area: imagen3;
+    padding: 3%;
+
+}
+
+#imagen4{
+    grid-area: imagen4;
+    padding: 3%;
+}
+
+
+/*Adaptativo*/
+
+
+@media screen and (max-width: 768px){
+   
+#contenedor{
+    grid-template-areas: 'titulo'
+                         'info'
+                         'imagen'
+                         'info2'
+                         'imagen2'
+                         'info3'
+                         'imagen3'
+                         'info4'
+                         'imagen4';
+    grid-template-columns: 95%;                     
+}
+}
+
